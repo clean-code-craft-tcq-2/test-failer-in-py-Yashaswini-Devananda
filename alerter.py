@@ -7,6 +7,7 @@ def network_alert_stub(celcius):
     # stub always succeeds and returns 200
     return 500
 
+
 def alert_in_celcius(farenheit):
     celcius = (farenheit - 32) * 5 / 9
     returnCode = network_alert_stub(celcius)
