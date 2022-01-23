@@ -5,7 +5,7 @@ def network_alert_stub(celcius):
     # Return 200 for ok
     # Return 500 for not-ok
     # stub always succeeds and returns 200
-    return 500
+    return 200
 
 
 def alert_in_celcius(farenheit):
@@ -24,4 +24,4 @@ alert_in_celcius(400.5)
 alert_in_celcius(303.6)
 print(f'{alert_failure_count} alerts failed.')
 print('All is well (maybe!)')
-assert(alert_failure_count == 2)
+assert(alert_failure_count == 0)
