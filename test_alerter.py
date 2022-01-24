@@ -9,7 +9,7 @@ def network_alert_stub(celcius):
   
 alerter.alert_in_celcius(400.5)
 alerter.alert_in_celcius(303.6)
-print(f'{alert_failure_count} alerts failed.')
+print(f'{alerter.alert_failure_count} alerts failed.')
 print('All is well (maybe!)')
 assert(alerter.alert_failure_count == 2) 
   
