@@ -1,5 +1,7 @@
+import test_alerter
+
 alert_failure_count = 0
-test_code == False
+test_alerter.test_code == False
 
 def network_alert_real(celcius):
     print(f'ALERT: Temperature is {celcius} celcius')
@@ -11,7 +13,7 @@ def network_alert_real(celcius):
 
 def alert_in_celcius(farenheit):
     celcius = (farenheit - 32) * 5 / 9
-    if test_code == True:
+    if test_alerter.test_code == True:
         returnCode = network_alert_stub(celcius)
     else:
         returnCode = network_alert_real(celcius)
