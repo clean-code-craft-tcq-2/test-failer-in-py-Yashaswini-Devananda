@@ -14,7 +14,7 @@ def network_alert_real(celcius):
 def alert_in_celcius(farenheit):
     celcius = (farenheit - 32) * 5 / 9
     if test_alerter.test_code == True:
-        returnCode = network_alert_stub(celcius)
+        returnCode = test_alerter.network_alert_stub(celcius)
     else:
         returnCode = network_alert_real(celcius)
     if returnCode != 200:
