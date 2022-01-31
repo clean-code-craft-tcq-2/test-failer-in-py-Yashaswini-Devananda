@@ -1,5 +1,5 @@
 import alerter
-stub_control_ok = True
+stub_control_ok = False
 
 def network_alert_stub(celcius):
     print(f'Stub ALERT: Temperature is {celcius} celcius')
