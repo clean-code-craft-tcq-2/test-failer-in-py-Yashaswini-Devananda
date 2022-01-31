@@ -1,13 +1,33 @@
 color_code_pairs = []
+
+def get_len_of_longest_item_in_string_list (string_list):
+    len_of_longest_item = len(string_list[0])
+    for x in string_list:
+        if len(x) > len_of_longest_item:
+            len_of_longest_item = len(x)
+    return len_of_longest_item
+    
+def digit_count(num):
+    quotient = 2
+    digit_count = 0
+    temp = num
+    while (quotient >= 1 ):
+        quotient = temp/10
+        temp = quotient
+        digit_count+=1
+    return digit_count
+    
 def print_color_map():
     major_colors = ["White", "Red", "Black", "Yellow", "Violet"]
     minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
+    color_pair_digit_count = digit_count(len(major_colors)*len(minor_colors))
+    max_color_length_of_major_colors = get_len_of_longest_item_in_string_list(major_colors)
+    max_color_length_of_minor_colors = get_len_of_longest_item_in_string_list(minor_colors)
     for i, major in enumerate(major_colors):
         for j, minor in enumerate(minor_colors):
-            color_code_pairs.append((f'{i * 5 + j} | {major} | {minor}'))
+            color_code_pairs.append((f'{(i * 5 + j)+1 : >{color_pair_digit_count}} | {major : <{max_color_length_of_major_colors}} | {minor : <{max_color_length_of_minor_colors}}'))
             print(color_code_pairs[i * 5 + j])
     return len(major_colors) * len(minor_colors)
-
 
 def test_alignment():
     last_num_pos = []
