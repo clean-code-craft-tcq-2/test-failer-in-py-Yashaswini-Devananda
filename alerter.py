@@ -1,7 +1,7 @@
 import test_alerter
 
 alert_failure_count = 0
-test_code = False
+test_code = True
 
 def network_alert_real(celcius):
     print(f'ALERT: Temperature is {celcius} celcius')
