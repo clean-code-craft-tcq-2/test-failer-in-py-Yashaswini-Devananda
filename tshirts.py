@@ -8,7 +8,7 @@ def size(cms):
         return 'L'
 
 for x in range (50):
-    if 0 < x <= 38:
+    if x <= 38:
         assert(size(x) == 'S')
     elif  38 < x < 42:
         assert(size(x) == 'M')
