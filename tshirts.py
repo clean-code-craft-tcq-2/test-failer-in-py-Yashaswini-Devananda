@@ -1,6 +1,6 @@
 
 def size(cms):
-    if cms < 38:
+    if cms <= 38:
         return 'S'
     elif cms > 38 and cms < 42:
         return 'M'
@@ -11,5 +11,5 @@ def size(cms):
 assert(size(37) == 'S')
 assert(size(40) == 'M')
 assert(size(43) == 'L')
-assert(size(38) == 'M')
+assert(size(38) == 'S')
 print("All is well (maybe!)\n")
