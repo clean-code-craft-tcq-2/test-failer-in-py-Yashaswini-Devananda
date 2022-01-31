@@ -1,5 +1,4 @@
 import alerter
-test_code = True
 
 def network_alert_stub(celcius):
     print(f'Stub ALERT: Temperature is {celcius} celcius')
