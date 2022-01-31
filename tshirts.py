@@ -7,9 +7,12 @@ def size(cms):
     else:
         return 'L'
 
-
-assert(size(37) == 'S')
-assert(size(40) == 'M')
-assert(size(43) == 'L')
-assert(size(38) == 'S')
+for x in range (50):
+    if 0 < x <= 38:
+        assert(size(x) == 'S')
+    elif  38 < x < 42:
+        assert(size(x) == 'M')
+    else:
+        assert(size(x) == 'L')
+        
 print("All is well (maybe!)\n")
