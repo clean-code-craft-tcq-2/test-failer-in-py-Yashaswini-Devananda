@@ -1,5 +1,3 @@
-color_code_pairs = []
-
 def get_len_of_longest_item_in_string_list (string_list):
     len_of_longest_item = len(string_list[0])
     for x in string_list:
@@ -16,7 +14,9 @@ def digit_count(num):
         temp = quotient
         digit_count+=1
     return digit_count
-    
+ 
+color_code_pairs = []
+
 def print_color_map():
     major_colors = ["White", "Red", "Black", "Yellow", "Violet"]
     minor_colors = ["Blue", "Orange", "Green", "Brown", "Slate"]
