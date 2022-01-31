@@ -15,11 +15,3 @@ alerter.alert_in_celcius(303.6)
 print(f'{alerter.alert_failure_count} alerts failed.')
 print('All is well (maybe!)')
 assert(alerter.alert_failure_count == 2) 
-
-stub_control_ok = False
-alerter.alert_in_celcius(400.5)
-alerter.alert_in_celcius(303.6)
-print(f'{alerter.alert_failure_count} alerts failed.')
-print('All is well (maybe!)')
-assert(alerter.alert_failure_count == 0) 
-  
